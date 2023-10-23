@@ -10,14 +10,14 @@ if (losAngelesElement) {
     losAngelesTimeElement.innerHTML = losAngelesTime.format("h:mm:ss [<small>]A[</small>]"
         );
     }
-let greeceElement = document.querySelector("#greece");
-if (greeceElement) {
-    let greeceDateElement = greeceElement.querySelector(".date");
-    let greeceTimeElemenet = greeceElement.querySelector(".time");
-    let greeceTime = moment().tz("Europe/Athens");
+let athensElement = document.querySelector("#athens");
+if (athensElement) {
+    let athensDateElement = athensElement.querySelector(".date");
+    let athensTimeElemenet = athensElement.querySelector(".time");
+    let athensTime = moment().tz("Europe/Athens");
 
-    greeceDateElement.innerHTML = greeceTime.format("MMMM Do YYYY");
-    greeceTimeElemenet.innerHTML = greeceTime.format("h:mm:ss [<small>]A[</small>]"
+    athensDateElement.innerHTML = athensTime.format("MMMM Do YYYY");
+    athensTimeElemenet.innerHTML = athensTime.format("h:mm:ss [<small>]A[</small>]"
         );
     }
 }
